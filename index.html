@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rahmathullah Umar Shareef - Data Analyst | Python | SQL | Power BI. Portfolio showcasing data analytics projects, skills, and expertise.">
+    <meta name="keywords" content="Data Analyst, Python, SQL, Power BI, Machine Learning, Data Science, Portfolio">
+    <meta name="author" content="Rahmathullah Umar Shareef ">
+    <title>Rahmathullah Umar Shareef | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body class="main-content">
+<div class="aurora">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <div class="loader-text">R<span>.</span></div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/prof.jpg" alt="Rahmathullah Umar Shareef - Data Analyst">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="hero-title">
+                    Rahmathullah
+                </h1>
+
+                <h2 class="hero-subtitle">
+                    Data Analyst
+                </h2>
+                <p>
+                    Detail-oriented Engineering graduate skilled in Python, SQL, Power BI, and Data Analysis,
+                    passionate about delivering data-driven insights that solve real business problems.
+                </p>
+                <div class="btn-con">
+                    <a href="Rahmathullah_Profile.pdf" download class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                    <a href="#" class="main-btn ghost-btn" data-id="contact" onclick="switchSection('contact'); return false;">
+                        <span class="btn-text">Hire Me</span>
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== ABOUT SECTION ===== -->
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About Me</h4>
+                    <p>
+                        I'm Rahmathullah U, an Engineering graduate (BE Mechatronics) currently undergoing Artificial Intelligence Engineer training at DataMites Institute, Chennai. I'm passionate about transforming raw data into meaningful insights using Python, SQL, Power BI, and Machine Learning.
+                    </p>
+                    <p>
+                        I enjoy building interactive dashboards, predictive models, and data pipelines that drive smarter decisions. My goal is to become a skilled Data Analyst who bridges technical depth with clear business communication.
+                    </p>
+                    <div class="btn-con">
+                        <a href="Rahmathullah_Profile.pdf" class="main-btn" download>
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item reveal-item">
+                        <div class="abt-text">
+                            <p class="large-text">AI Student</p>
+                            <p class="small-text">Currently pursuing <br> AI & Data Science</p>
+                        </div>
+                    </div>
+                    <div class="about-item reveal-item">
+                        <div class="abt-text">
+                            <p class="large-text">Data Analyst</p>
+                            <p class="small-text">Python, SQL, Power BI <br> & Analytics</p>
+                        </div>
+                    </div>
+                    <div class="about-item reveal-item">
+                        <div class="abt-text">
+                            <p class="large-text">EDA Expert</p>
+                            <p class="small-text">Data Cleaning, Preprocessing <br> & Visualization</p>
+                        </div>
+                    </div>
+                    <div class="about-item reveal-item">
+                        <div class="abt-text">
+                            <p class="large-text">Career Goal</p>
+                            <p class="small-text">Data Analyst / ML <br> Professional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="about-stats">
+                <h4 class="stat-title">Technical Skills</h4>
+                <div class="skills-grid">
+                    <!-- Category: Programming -->
+                    <div class="skill-category">
+                        <div class="skill-cat-label"><i class="fas fa-code"></i> Programming</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <!-- Category: Data Analysis -->
+                    <div class="skill-category">
+                        <div class="skill-cat-label"><i class="fas fa-chart-bar"></i> Data Analysis</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Data Cleaning</span>
+                            <span class="skill-tag">Data Preprocessing</span>
+                            <span class="skill-tag">EDA</span>
+                            <span class="skill-tag">KPI Reporting</span>
+                        </div>
+                    </div>
+                    <!-- Category: Visualization -->
+                    <div class="skill-category">
+                        <div class="skill-cat-label"><i class="fas fa-chart-pie"></i> Visualization</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Seaborn</span>
+                            <span class="skill-tag">Dashboard Design</span>
+                        </div>
+                    </div>
+                    <!-- Category: Libraries -->
+                    <div class="skill-category">
+                        <div class="skill-cat-label"><i class="fas fa-layer-group"></i> Libraries & Tools</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Microsoft Excel</span>
+                            <span class="skill-tag">Jupyter Notebook</span>
+                        </div>
+                    </div>
+                    <!-- Category: ML -->
+                    <div class="skill-category">
+                        <div class="skill-cat-label"><i class="fas fa-microchip"></i> Machine Learning</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Regression</span>
+                            <span class="skill-tag">Classification</span>
+                            <span class="skill-tag">Clustering</span>
+                            <span class="skill-tag">Time Series</span>
+                            <span class="skill-tag">Model Evaluation</span>
+                        </div>
+                    </div>
+                    <!-- Category: DL -->
+                    <div class="skill-category">
+                        <div class="skill-cat-label"><i class="fas fa-brain"></i> Deep Learning</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Neural Networks</span>
+                            <span class="skill-tag">Model Evaluation</span>
+                        </div>
+                    </div>
+                    <!-- Category: Databases -->
+                    <div class="skill-category">
+                        <div class="skill-cat-label"><i class="fas fa-database"></i> Databases</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item reveal-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <p class="tl-duration">2025 – Present</p>
+                    <h5>AI Engineer Training<span> – DataMites Institute, Chennai</span></h5>
+                    <p>
+                        Trained in Python, SQL, Machine Learning, Data Analysis, Power BI, and Data Visualization. Working on hands-on datasets involving preprocessing, analysis, and reporting to become industry-ready.
+                    </p>
+                </div>
+                <div class="timeline-item reveal-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <p class="tl-duration">2021 – 2025</p>
+                    <h5>BE Mechatronics<span> – Hindusthan College of Engineering & Technology, Coimbatore</span></h5>
+                    <p>
+                        Graduated with 75%. Gained exposure to mechanical, electrical, and software concepts, strengthening analytical and problem-solving abilities.
+                    </p>
+                </div>
+                <div class="timeline-item reveal-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <p class="tl-duration">2019 – 2021</p>
+                    <h5>Higher Secondary Certificate<span> – Muvendar Matric HR Sec School, Thanjavur</span></h5>
+                    <p>
+                        Completed HSC with 84%, building a strong academic foundation and analytical mindset.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PORTFOLIO SECTION ===== -->
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Projects</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Data Analytics & Machine Learning projects built with real-world datasets.
+            </p>
+            <div class="portfolios">
+
+                <!-- Project 1: California House Price Prediction -->
+                <div class="portfolio-item reveal-item">
+                    <div class="port-card-inner">
+                        <div class="port-card-header">
+                            <div class="port-icon-wrap">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="port-tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Regression</span>
+                            </div>
+                        </div>
+                        <div class="port-card-body">
+                            <h3>California House Price Prediction</h3>
+                            <p>
+                                Collected, cleaned, and preprocessed a large-scale California housing dataset by handling missing values, outliers, and categorical encoding. Built and evaluated Linear Regression, SVR, and Random Forest models using RMSE, MAE, and R² metrics.
+                            </p>
+                            <ul class="port-highlights">
+                                <li><i class="fas fa-check-circle"></i> Feature engineering for improved accuracy</li>
+                                <li><i class="fas fa-check-circle"></i> Model comparison across 3 algorithms</li>
+                                <li><i class="fas fa-check-circle"></i> EDA with Matplotlib & Seaborn</li>
+                            </ul>
+                        </div>
+                        <div class="port-card-footer">
+                            <a href="https://github.com/rahmathullah22" target="_blank" class="port-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <span class="port-type">ML · Regression</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Logistics Shipment Analytics Dashboard -->
+                <div class="portfolio-item reveal-item">
+                    <div class="port-card-inner">
+                        <div class="port-card-header">
+                            <div class="port-icon-wrap powerbi">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="port-tech-stack">
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">KPI Design</span>
+                                <span class="tech-tag">DAX</span>
+                            </div>
+                        </div>
+                        <div class="port-card-body">
+                            <h3>Logistics Shipment Analytics Dashboard</h3>
+                            <p>
+                                Designed and developed an interactive Power BI dashboard to analyze shipment performance across multiple carriers and destinations. Built KPI cards and interactive visualizations for carrier performance, cost, weight, and transit days.
+                            </p>
+                            <ul class="port-highlights">
+                                <li><i class="fas fa-check-circle"></i> Dynamic slicers & filters for data exploration</li>
+                                <li><i class="fas fa-check-circle"></i> Multi-carrier performance comparison</li>
+                                <li><i class="fas fa-check-circle"></i> Real-time KPI reporting dashboard</li>
+                            </ul>
+                        </div>
+                        <div class="port-card-footer">
+                            <button class="port-link" onclick="openDashboardPreview()">
+                                <i class="fas fa-eye"></i> Preview
+                            </button>
+                            <span class="port-type">Power BI · Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Coming Soon -->
+                <div class="portfolio-item reveal-item coming-soon-card">
+                    <div class="port-card-inner">
+                        <div class="port-card-header">
+                            <div class="port-icon-wrap coming">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="port-card-body coming-body">
+                            <h3>More Projects Coming Soon</h3>
+                            <p>
+                                Currently building hands-on data analytics, machine learning, and visualization projects as part of my AI Engineer training at DataMites.
+                            </p>
+                            <div class="coming-soon-badge">🚧 In Progress</div>
+                        </div>
+                        <div class="port-card-footer">
+                            <a href="https://github.com/rahmathullah22" target="_blank" class="port-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Let's Connect</h4>
+                        <p>
+                            Open to Data Analyst roles, freelance analytics projects, and collaboration opportunities. Feel free to reach out!
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p>: Chennai, Tamil Nadu</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p><span>: <a href="mailto:uprahmathullah2003@gmail.com">uprahmathullah2003@gmail.com</a></span></p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Mobile</span>
+                                </div>
+                                <p><span>: +91 7339583048</span></p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p><span>: Tamil, English</span></p>
+                            </div>
+                        </div>
+                        <div class="contact-icon">
+                            <a href="https://www.linkedin.com/in/rahmathullah1" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/rahmathullah22" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:uprahmathullah2003@gmail.com" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="right-contact">
+                        <!-- IMPORTANT: Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', 'YOUR_PUBLIC_KEY' with your EmailJS credentials -->
+                        <!-- Sign up at https://www.emailjs.com/ (free tier supports 200 emails/month) -->
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="input-control i-c-2">
+                                <div class="field-wrap">
+                                    <input type="text" id="from_name" name="from_name" required placeholder="YOUR NAME" autocomplete="name">
+                                    <span class="field-error" id="nameError"></span>
+                                </div>
+                                <div class="field-wrap">
+                                    <input type="email" id="from_email" name="from_email" required placeholder="YOUR EMAIL" autocomplete="email">
+                                    <span class="field-error" id="emailError"></span>
+                                </div>
+                            </div>
+                            <div class="input-control">
+                                <div class="field-wrap">
+                                    <input type="text" id="subject" name="subject" required placeholder="ENTER SUBJECT">
+                                    <span class="field-error" id="subjectError"></span>
+                                </div>
+                            </div>
+                            <div class="input-control">
+                                <div class="field-wrap">
+                                    <textarea id="message" name="message" cols="15" rows="8" placeholder="Message Here..." required></textarea>
+                                    <span class="field-error" id="msgError"></span>
+                                </div>
+                            </div>
+                            <div class="submit-btn">
+                                <button type="submit" class="main-btn" id="submitBtn">
+                                    <span class="btn-text" id="btnText">Send Message</span>
+                                    <span class="btn-icon"><i class="fas fa-paper-plane" id="btnIcon"></i></span>
+                                </button>
+                            </div>
+                            <div id="formStatus" class="form-status" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Navigation Controls -->
+    <div class="controls">
+        <div class="control active-btn" data-id="home" title="Home">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about" title="About">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio" title="Portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="contact" title="Contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+
+    <div class="theme-btn" title="Toggle Theme">
+        <i class="fas fa-adjust"></i>
+    </div>
+
+    <!-- Dashboard Preview Lightbox -->
+    <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeDashboardPreview()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeDashboardPreview()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="lb-header">
+                <div class="lb-icon"><i class="fas fa-chart-bar"></i></div>
+                <div>
+                    <h3>Logistics Shipment Analytics Dashboard</h3>
+                    <p>Power BI · Interactive Dashboard</p>
+                </div>
+            </div>
+            <img src="img/dashboard-preview.png" 
+                alt="Logistics Shipment Analytics Dashboard" 
+                class="lb-dashboard-img">
+        </div>
+</div>
+    <div id="cursor">
+        <span id="cursor-text"></span>
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="cursor.js"></script>
+    <script src="effects.js"></script>
+    
+</body>
+</html>
